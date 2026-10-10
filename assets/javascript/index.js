@@ -77,7 +77,7 @@ function generateNewPassword() {
     return;
   }
 
-  for (i = 1; i <= length_value; i++) {
+  for (let i = 1; i <= length_value; i++) {
     char = randomChar();
 
     switch (true) {
@@ -110,7 +110,7 @@ function generateNewPassword() {
   if (symbols_value) potential_characters += 23;
   console.log(potential_characters + " " + length_value);
 
-  bitse = Math.round(length_value * Math.log2(potential_characters));
+  let bitse = Math.round(length_value * Math.log2(potential_characters));
   strengthBar(bitse);
   bits_display.textContent = String(bitse) + " bits of entropy";
 
