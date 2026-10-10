@@ -1,6 +1,6 @@
 # Project Diagram
 
-This diagram illustrates the structure and relationships of the files in the Nook password generator application.
+This diagram illustrates the structure and relationships of the files in the Nullen password generator application.
 
 ```mermaid
 graph TD
