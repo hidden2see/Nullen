@@ -56,7 +56,7 @@ function strengthBar(bitse) {
 }
 
 function generateNewPassword() {
-  let password_generated = " ";
+  let password_generated = "";
   let char;
   let potential_characters;
   let length_value = length.value;
