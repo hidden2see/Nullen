@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nook, the password generator that loves privacy"
+    />
+    <title>Nook - Free Private Password Generator (No Tracking)</title>
+
+    <link rel="icon" type="image/svg+xml" href="/media/logo.svg" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/assets/media/logo.svg" alt="Logo" id="logo" />
+      <span>Nook</span>
+    </header>
+    <main>
+      <div id="hero">
+        <h1>Made here. Kept nowhere.</h1>
+        <p>
+          A password generator with no account, no ads and no tracking. Pick a
+          length, copy the result.
+        </p>
+      </div>
+      <div id="card">
+        <div id="password-row">
+          <span id="password-field">k9#Tq2v$Lw8!mP4xR7@c</span>
+        </div>
+        <div id="strength-row">
+          <div id="strength-tracker">
+            <span id="strength-bar"></span>
+          </div>
+        </div>
+        <div id="info-row">
+          <div id="meta">
+            <p id="strength-info">Very strong</p>
+            <p id="strength-bits">105 bits of entropy</p>
+          </div>
+        </div>
+        <div id="buttons-row">
+          <div id="buttons">
+            <button id="button-copy"><span>Copy password</span></button>
+            <button id="button-new"><span>New</span></button>
+          </div>
+        </div>
+        <div id="length-row">
+          <div id="length-selector">
+            <label for="length-chooser">Length</label>
+            <input
+              type="range"
+              min="8"
+              max="64"
+              step="1"
+              value="20"
+              id="length-chooser"
+            />
+            <span id="password-length">20</span>
+          </div>
+        </div>
+        <div id="settings-row">
+          <div id="options">
+            <div class="options-row">
+              <div class="option">
+                <input
+                  type="checkbox"
+                  id="lowercase"
+                  class="personlization"
+                  checked
+                />
+                <label for="lowercase">Lowercase</label>
+              </div>
+              <div class="option">
+                <input
+                  type="checkbox"
+                  id="uppercase"
+                  class="personlization"
+                  checked
+                />
+                <label for="uppercase">Uppercase</label>
+              </div>
+            </div>
+            <div class="options-row">
+              <div class="option">
+                <input
+                  type="checkbox"
+                  id="numbers"
+                  class="personlization"
+                  checked
+                />
+                <label for="numbers">Numbers</label>
+              </div>
+              <div class="option">
+                <input
+                  type="checkbox"
+                  id="symbols"
+                  class="personlization"
+                  checked
+                />
+                <label for="symbols">Symbols</label>
+              </div>
+            </div>
+            <div class="options-row">
+              <div class="option">
+                <input
+                  type="checkbox"
+                  id="look-alikes"
+                  class="personlization"
+                />
+                <label for="look-alikes">Skip look-alikes (l, I, O, 0)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="privacy">
+        <p>
+          <span>Your password never leaves this page.</span> It's made in your
+          browser with the system's secure random generator. Nothing is sent,
+          saved or tracked, and there are no cookies.
+        </p>
+      </div>
+      <div id="about">
+        <div class="about-section">
+          <h2>How long should a password be?</h2>
+          <p>
+            For important accounts such as email and banking, use at least 16
+            characters. Length matters more than anything else: each extra
+            character multiplies the number of guesses an attacker needs. Use a
+            different password for every account, and turn on two-factor sign-in
+            where you can.
+          </p>
+        </div>
+        <div class="about-section">
+          <h2>How Nook makes passwords</h2>
+          <p>
+            Every character is picked independently using your browser's secure
+            random number generator. If you select several character types, the
+            password always includes at least one of each. The page runs
+            entirely on your device, with no account, no cookies and no ads.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Nook · Privacy and contact</span>
+    </footer>
+
+    <script src="/assets/javascript/index.js"></script>
+  </body>
+</html>
