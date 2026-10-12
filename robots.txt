@@ -82,4 +82,4 @@ User-agent: CitibotSiteCrawler
 Disallow: /
 
 # Sitemap Index
-Sitemap: https://nullen.cc
+Sitemap: https://nullen.cc/sitemap.xml
