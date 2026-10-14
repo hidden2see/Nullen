@@ -1,0 +1,47 @@
+/* ============================================================
+   privacy.css — Styles for the privacy page (pages/privacy.html)
+   Loaded after style.css. Uses theme variables defined there.
+   ============================================================ */
+
+/* Logo + wordmark link back to the generator */
+#home-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+#home-link:focus-visible {
+    outline: 2px solid var(--main-text);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Slightly more air between the policy sections */
+#sections {
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+#sections .about-section {
+    padding-bottom: 32px;
+}
+
+.contact-email {
+    color: var(--main-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.contact-email:hover {
+    color: var(--symbols-color);
+}
+
+.contact-email:focus-visible {
+    outline: 2px solid var(--main-text);
+    outline-offset: 3px;
+    border-radius: 2px;
+}

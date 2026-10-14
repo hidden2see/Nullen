@@ -1,16 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>Nullen - Free Private Password Generator (No Tracking)</title>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Nullen, the password generator that loves privacy"
+      content="Generate strong passwords in your browser. No account, no ads, no tracking. Made here. Kept nowhere."
     />
-    <title>Nullen - Free Private Password Generator (No Tracking)</title>
+    <link rel="canonical" href="https://nullen.cc/" />
+    <meta
+      property="og:title"
+      content="Nullen: Free Private Password Generator"
+    />
+    <meta
+      property="og:description"
+      content="No account, no ads, no tracking. Passwords are made in your browser and never leave the page."
+    />
+    <link rel="shortcut icon" href="/assets/media/logo.svg" type="image/x-icon">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nullen.cc/" />
+    <meta name="theme-color" content="#0E0E0D" />
 
-    <link rel="icon" type="image/svg+xml" href="/assets/media/logo.svg" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body>
     <header>
@@ -117,7 +131,7 @@
       </div>
       <div id="privacy">
         <p>
-          <span>Your password never leaves this page.</span> It's made in your
+          Your password never leaves this page. It's made in your
           browser with the system's secure random generator. Nothing is sent,
           saved or tracked, and there are no cookies.
         </p>
@@ -142,10 +156,35 @@
             entirely on your device, with no account, no cookies and no ads.
           </p>
         </div>
+        <div class="about-section">
+          <h2>Is an online password generator safe?</h2>
+          <p>
+            It can be, if it runs in your browser and sends nothing. Nullen does
+            both: your password is made on your device and never sent anywhere.
+            You can check by going offline after the page loads. It keeps
+            working.
+          </p>
+        </div>
+        <div class="about-section">
+          <h2>What does "bits of entropy" mean?</h2>
+          <p>
+            It measures how many guesses an attacker would need. Every extra bit
+            doubles the work. Nullen calls under 50 bits weak, 70 and up strong,
+            and 100 and up very strong.
+          </p>
+        </div>
+        <div class="about-section">
+          <h2>Should I use a password manager?</h2>
+          <p>
+            Yes. A manager remembers a different long password for every
+            account, so you only have to remember one. Generate a password here,
+            save it in your manager, and never reuse it elsewhere.
+          </p>
+        </div>
       </div>
     </main>
     <footer>
-      <span>Nullen · Privacy and contact</span>
+      <span>Nullen · <a href="/pages/privacy.html">Privacy and contact</a></span>
     </footer>
 
     <script src="/assets/javascript/index.js"></script>
