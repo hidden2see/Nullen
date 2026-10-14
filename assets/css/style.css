@@ -202,6 +202,22 @@ footer span {
     line-height: normal;
 }
 
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+footer a:hover {
+    color: var(--secondray-text);
+}
+
+footer a:focus-visible {
+    outline: 2px solid var(--main-text);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 @media (max-width: 480px) {
     header {
         padding-bottom: 40px;
