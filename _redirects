@@ -1,1 +1,9 @@
-/*  /pages/:splat  200
+# 1. Protect the sitemap index
+/sitemap_index.xml  /sitemap_index.xml  200
+
+# 2. Strict static mappings for your privacy pages
+/privacy            /pages/privacy.html  200
+/privacy.html       /pages/privacy.html  200
+
+# 3. Dynamic wildcard proxy rule for all other assets/subpages
+/*                  /pages/:splat        200
